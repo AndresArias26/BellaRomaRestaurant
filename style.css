@@ -1,0 +1,138 @@
+@import url('https://fonts.googleapis.com/css2?family=Ubuntu:wght@300&display=swap');
+
+
+*, *::before, *::after{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+:root{
+    --BASE: #555;
+    --BASE--100: #F1F1F1;
+    --BASE--400: #555;
+    --BASE--800: #000;
+    --YELLOW: #FFDA4B;
+    --YELLOW-100: #FFFBE6;
+    --YELLOW-400: #FFDA4B;
+    --YELLOW-800: #8B6F00;
+    --BLUE: #266444;
+    --BLUE-100: #E2F8FF;
+    --BLUE-400: #61DAFB;
+    --BLUE-800: #0A61AE;
+}
+
+body{
+    font-family: "Ubuntu", serif;
+    font-size: 20px;
+}
+
+a{
+    text-decoration: none;
+    color: var(--BLUE);
+    /* Using the & symbol and so it knoes it's still part of this a tag */
+    &:hover{
+        text-decoration: underline;
+    }
+}
+
+header{
+    padding: 0 10px;
+    display: flex;
+    justify-content: space-between;
+    max-width: 1440px;
+    margin: auto;
+    border-bottom: 1px solid rgba(0, 0, 0, 0.1);
+    .logo-holder{
+        display: flex;
+        padding: 10px;
+        align-items: center;
+
+        .logo{
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            height: 100px;
+            width: 100px;
+            border-radius: 50%;
+        }
+    }
+    nav{
+        display: flex;
+        align-items: center;
+        ul{
+            display: flex;
+            list-style-type: none;
+            gap: 5px;
+            li{
+                display: inline-block;
+                a{
+                    display: inline-block;
+                    padding: 10px 20px;
+                    color: var(--BASE--800);
+                    font-weight: bold;
+                    &:hover{
+                        background-color: var(--BASE--100);
+                        border-radius: 10px;
+                        text-decoration: none;
+                    }
+                }
+            }
+        }
+        .mobile-toggle{
+            display: none;
+            color: var(--BASE--800);
+            padding: 10px;
+            @media (max-width: 768px){
+                display: inline-block;
+                position: absolute;
+                top: 20px;
+                right: 20px;
+            }
+        }
+    }
+        
+    @media (max-width: 1024px){
+            flex-direction: column;
+            align-items: center;
+        }
+    
+     @media (max-width: 768px) {
+            flex-direction: column;
+            align-items: center;
+            nav{
+                margin-top: 10px;
+                width: 100%;
+                ul{
+                    display: none;
+                    flex-direction: column;
+                    text-align: center;
+                    /* Making 100% allows it in the center */
+                    width: 100%;
+                    a{
+                        /* When I do this I am making the a link expanded and use the full screen */
+                        width: 100%;
+                    }
+                    &.active{
+                        display: flex;
+                    }
+                }
+            }
+        }
+    
+}
+
+.button{
+    display: inline-block;
+    padding: 10px 30px;
+    background-color: var(--BLUE);
+    color: var(--BASE--100);
+    border-radius: 10px;
+    transition: ease 0.3s all;
+    &:hover{
+        text-decoration: none;
+        background-color: var(--BASE--800);
+    }
+    
+}
+
