@@ -136,3 +136,33 @@ header{
     
 }
 
+/* Hero Section */
+.container{
+    background-image: url(images/roger-ce-PZINwLOOVlc-unsplash.jpg);
+    background-size: cover; /* Ensures the image covers the whole section */
+    background-position: center;
+    height: 80vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    color: var(--BASE--100);
+    font-size: 3rem;
+    font-weight: bold;
+     text-shadow: 2px 2px 4px #000000;
+
+    @media (max-width: 1024px){
+        font-size: 2rem;
+        
+    }
+    
+     @media (max-width: 768px){
+        font-size: 1.5rem;
+        flex-direction: column;
+        /* justify-content: start; */
+       p{
+        font-size: 1rem;
+       }
+     }
+}
+
