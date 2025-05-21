@@ -137,12 +137,13 @@ header{
 }
 
 /* Hero Section */
-.container{
+.container__hero{
     background-image: url(images/roger-ce-PZINwLOOVlc-unsplash.jpg);
     background-size: cover; /* Ensures the image covers the whole section */
     background-position: center;
     height: 80vh;
     display: flex;
+    flex-direction: column;
     justify-content: center;
     align-items: center;
     text-align: center;
@@ -158,11 +159,79 @@ header{
     
      @media (max-width: 768px){
         font-size: 1.5rem;
-        flex-direction: column;
+       
         /* justify-content: start; */
        p{
         font-size: 1rem;
        }
      }
+
+    
 }
 
+/* Products Section */
+.container-menu{
+    position: relative;
+    z-index: 1;
+    text-align: center;
+    padding: 80px 20px;
+}
+
+.menu-heading{
+    font-size: 3rem;
+    margin-bottom: 0.5em;
+}
+
+.container-menu p{
+    font-size: 1.5rem;
+    margin-bottom: 2em;
+}
+
+.menu{
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 20px;
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 20px;
+}
+
+.dish{
+    background-color: rgba(237, 237, 237, 0.9);
+    color: var(--BASE--800);
+    border-radius: 12px;
+    overflow: hidden;  /*specifies whether to clip the content or to add scrollbars when the content of an element is too big to fit in the specified area.*/
+    width: 300px;
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.3);
+}
+
+.dish img{
+    width: 100%;
+    height: 200px;
+    object-fit: cover;
+}
+
+.dish-info{
+    padding: 15px;
+}
+
+.dish-info h3{
+    margin: 10px 0;
+}
+
+.dish-info p {
+    margin: 0 0 10px;
+}
+
+.price{
+    color: var(--BLUE);
+    font-weight: bold;
+}
+
+
+
+/* Smooth Scroll */
+html {
+    scroll-behavior: smooth;
+}

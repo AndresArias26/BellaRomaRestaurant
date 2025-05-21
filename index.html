@@ -13,9 +13,9 @@
             <img class="logo" src="images/Flux_Dev_Create_a_vintageinspired_logo_for_an_Italian_restaura_3.jpg" alt="Bella Roma Logo">
         </a>
         <nav>
-            <ul id="menu">
+            <ul id="nav-bar">
                 <li>
-                    <a href="">Menu</a>
+                    <a href="#menu">Menu</a>
                 </li>
                 <li>
                     <a href="">Hours</a>
@@ -24,7 +24,8 @@
                     <a href="">About</a>
                 </li>
                 <li>
-                    <a href="tel:+1(123) 456-7890" class="button">Contact</a>
+                    <!-- <a href="tel:+1(123) 456-7890" class="button">Contact</a> -->
+                    <a href="#contact" class="button">Contact</a>
                 </li>
             </ul>
             <a href="#" class="mobile-toggle" onclick="toggleMobileMenu();">
@@ -36,13 +37,75 @@
     </header>
     <main>
         <section class="hero">
-            <div class="container">
+            <div class="container__hero">
                 <h1>Authentic Italian Food</h1>
                 <p>Delight your palate with authentic ingredients from southern Italy.</p>
             </div>
         </section>
     </main>
     
+    <section>
+        <div id="menu" class="container-menu">
+            <h2 class="menu-heading">Menu</h2>
+            <p>Authentic Italian cuisine made with love</p>
+            <div  class="menu">
+                <div class="dish">
+                    <img src="images/amin-ramezani-iBb51h7HQZU-unsplash.jpg" alt="Spaghetti Carbonara">
+                    <div class="dish-info">
+                        <h3>Spaghetti Carbonara</h3>
+                        <p>Classic Roman pasta with pancetta, eggs, and pecorino cheese.</p>
+                        <p class="price">$15</p>
+                    </div>
+                </div>
+
+                <div class="dish">
+                    <img src="images/chris-hahn-Q8R3fqlMFmU-unsplash.jpg" alt=">Classic Italian bread">
+                    <div class="dish-info">
+                        <h3>Italian Bread</h3>
+                        <p>Classic bread with ham, eggs, and pecorino cheese.</p>
+                        <p class="price">$8</p>
+                    </div>
+                </div>
+
+                <div class="dish">
+                    <img src="images/emanuel-ekstrom-flEUTTwGlJQ-unsplash.jpg" alt="Classic Roman lasagna">
+                    <div class="dish-info">
+                        <h3>Lasagna Carbonara</h3>
+                        <p>Classic Roman lasagna with pancetta, eggs, and pecorino cheese.</p>
+                        <p class="price">$15</p>
+                    </div>
+                </div>
+
+                <div class="dish">
+                    <img src="images/subagus-indra-av7p1o-HGB8-unsplash.jpg" alt="Classic Roman lasagna">
+                    <div class="dish-info">
+                        <h3>Margherita Pizza</h3>
+                        <p>Wood-fired pizza with fresh mozzarella, basil and San Marzano tomatoes.</p>
+                        <p class="price">$18</p>
+                    </div>
+                </div>
+
+                <div class="dish">
+                    <img src="images/tiramisu.jpg" alt="tiramisu">
+                    <div class="dish-info">
+                        <h3>Tiramisu</h3>
+                        <p>Traditional Italian dessert layered with mascarpone and expresso-soaked ladyfingers.</p>
+                        <p class="price">$5</p>
+                    </div>
+                </div>
+                
+                <div class="dish">
+                    <img src="images/gelato.jpg" alt="An italin Ice Cream (Gelato)">
+                    <div class="dish-info">
+                        <h3>Gelato</h3>
+                        <p>It is an Italy traditional dessert that is enjoyed all year round.</p> <br>
+                        <p class="price">$5</p>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </section>
 
     <script src="index.js"></script>
 </body>
