@@ -235,3 +235,41 @@ header{
 html {
     scroll-behavior: smooth;
 }
+
+/* Contact Section */
+.contact{
+    display: flex;
+}
+
+.contact-image{
+    width: 50%;
+    height: 700px;
+}
+
+.contact-info{
+    padding-left: 200px;
+
+
+    h2{
+        font-size: 3rem;
+        margin-bottom: 100px;
+        margin-top: 50px;
+    }
+
+    h3{
+        font-size: 2rem;
+        margin-bottom: 0.5rem;
+    }
+
+    a, address{
+        font-size: 1.5rem;
+        margin-bottom: 50px;
+    }
+
+    .phone, .email{
+        margin-bottom: 50px;
+    }
+}
+
+
+/* End */
